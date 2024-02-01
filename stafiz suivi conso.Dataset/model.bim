@@ -11684,6 +11684,14 @@
           }
         ],
         "lineageTag": "355f3a9a-3f46-45f3-9d86-3fda09a19ac3",
+        "measures": [
+          {
+            "name": "Measure",
+            "expression": "COUNT(Collaborateur[Objet])",
+            "formatString": "0",
+            "lineageTag": "c3c14739-0fd6-4c58-bc94-ebe5efb7ebf4"
+          }
+        ],
         "partitions": [
           {
             "name": "Collaborateur",
