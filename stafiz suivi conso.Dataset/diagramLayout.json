@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 379.64373900187843,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 292.7915565836426,
+            "y": 222.52158300356837
+          },
+          "nodeIndex": "Feuil1",
+          "nodeLineageTag": "2caf1b01-da0f-4607-bcf5-dfd75d2788b6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 646.039034710121,
+            "y": 261.7467172999693
+          },
+          "nodeIndex": "Worksheet",
+          "nodeLineageTag": "c74b7f56-ba12-45b3-b1bd-ec42096cfd30",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 413.348948229803,
+            "y": 618.02204283885237
+          },
+          "nodeIndex": "Client",
+          "nodeLineageTag": "f91819f0-e65c-4911-8a8b-de75a47be3c1",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 311.33457532177778,
+            "y": 0
+          },
+          "nodeIndex": "Collaborateur",
+          "nodeLineageTag": "355f3a9a-3f46-45f3-9d86-3fda09a19ac3",
+          "size": {
+            "height": 173,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 935.10073658801457,
+            "y": 0
+          },
+          "nodeIndex": "Mission",
+          "nodeLineageTag": "b9a46767-6f23-4784-885e-f23eb393145b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 84.235113759624781,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
