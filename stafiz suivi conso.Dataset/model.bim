@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Worksheet\",\"Feuil1\",\"Client\",\"Collaborateur\",\"Mission\"]"
+        "value": "[\"timesheet\",\"previsions\",\"Client\",\"Collaborateur\",\"Mission\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -535,7 +535,7 @@
               "feuil_1": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1"
+                    "ConceptualEntity": "previsions"
                   }
                 },
                 "State": "Generated",
@@ -557,7 +557,7 @@
               "feuil_1.client": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Client"
                   }
                 },
@@ -663,7 +663,7 @@
               "feuil_1.client_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Client ID"
                   }
                 },
@@ -722,7 +722,7 @@
               "feuil_1.column_26": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Column26"
                   }
                 },
@@ -745,7 +745,7 @@
               "feuil_1.date": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Date"
                   }
                 },
@@ -782,7 +782,7 @@
               "feuil_1.date.variation.date_hierarchy": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "Hierarchy": "Date Hierarchy",
                     "VariationSet": "Variation",
                     "VariationSource": "Date"
@@ -802,7 +802,7 @@
               "feuil_1.date.variation.date_hierarchy.day": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Day",
                     "VariationSet": "Variation",
@@ -847,7 +847,7 @@
               "feuil_1.date.variation.date_hierarchy.month": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Month",
                     "VariationSet": "Variation",
@@ -912,7 +912,7 @@
               "feuil_1.date.variation.date_hierarchy.quarter": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Quarter",
                     "VariationSet": "Variation",
@@ -977,7 +977,7 @@
               "feuil_1.date.variation.date_hierarchy.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Year",
                     "VariationSet": "Variation",
@@ -1042,7 +1042,7 @@
               "feuil_1.devise": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Devise"
                   }
                 },
@@ -1058,7 +1058,7 @@
               "feuil_1.devise_mission": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Devise mission"
                   }
                 },
@@ -1174,7 +1174,7 @@
               "feuil_1.engagement": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Engagement"
                   }
                 },
@@ -1290,7 +1290,7 @@
               "feuil_1.frais_non_refacturable": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Frais non refacturables"
                   }
                 },
@@ -1306,7 +1306,7 @@
               "feuil_1.history_id": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "History Id"
                   }
                 },
@@ -1428,7 +1428,7 @@
               "feuil_1.history_line_id": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "History Line Id"
                   }
                 },
@@ -1556,7 +1556,7 @@
               "feuil_1.jours___quantité": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Jours / Quantité"
                   }
                 },
@@ -1611,7 +1611,7 @@
               "feuil_1.marge": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Marge"
                   }
                 },
@@ -1627,7 +1627,7 @@
               "feuil_1.marge_pdp_": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Marge pdp %"
                   }
                 },
@@ -1663,7 +1663,7 @@
               "feuil_1.mission": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Mission"
                   }
                 },
@@ -1782,7 +1782,7 @@
               "feuil_1.montant_de_vente": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Montant de vente"
                   }
                 },
@@ -1798,7 +1798,7 @@
               "feuil_1.numéro_de_Devi": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Numéro de devis"
                   }
                 },
@@ -1814,7 +1814,7 @@
               "feuil_1.objet": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Objet"
                   }
                 },
@@ -1830,7 +1830,7 @@
               "feuil_1.objet_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Objet ID"
                   }
                 },
@@ -1889,7 +1889,7 @@
               "feuil_1.objet_type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Objet (type)"
                   }
                 },
@@ -2011,7 +2011,7 @@
               "feuil_1.production_valorisée": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Production valorisée"
                   }
                 },
@@ -2027,7 +2027,7 @@
               "feuil_1.remise": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Remise"
                   }
                 },
@@ -2043,7 +2043,7 @@
               "feuil_1.taux": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Taux"
                   }
                 },
@@ -2059,7 +2059,7 @@
               "feuil_1.taux_de_réalisation": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Taux de réalisation"
                   }
                 },
@@ -2075,7 +2075,7 @@
               "feuil_1.total": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Total"
                   }
                 },
@@ -2111,7 +2111,7 @@
               "feuil_1.total_montant_des_ventes": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Total Montant des ventes"
                   }
                 },
@@ -2147,7 +2147,7 @@
               "feuil_1.type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Type"
                   }
                 },
@@ -2263,7 +2263,7 @@
               "feuil_1.type_de_taux": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Type de taux"
                   }
                 },
@@ -2379,7 +2379,7 @@
               "feuil_1.tâche": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Feuil1",
+                    "ConceptualEntity": "previsions",
                     "ConceptualProperty": "Tâche"
                   }
                 },
@@ -2684,7 +2684,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Mission",
-                    "ConceptualProperty": "Engagement"
+                    "ConceptualProperty": "Mission"
                   }
                 },
                 "State": "Generated",
@@ -2868,7 +2868,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Mission",
-                    "ConceptualProperty": "Mission"
+                    "ConceptualProperty": "Mission ID"
                   }
                 },
                 "State": "Generated",
@@ -3221,7 +3221,7 @@
               "worksheet": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet"
+                    "ConceptualEntity": "timesheet"
                   }
                 },
                 "State": "Generated",
@@ -3296,7 +3296,7 @@
               "worksheet.RAF_to_date": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "RAF to date"
                   }
                 },
@@ -3338,7 +3338,7 @@
               "worksheet.assignment_reference_stafiz_code_of_automatic_assignment": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Assignment reference (Stafiz code of automatic assignment)"
                   }
                 },
@@ -3360,7 +3360,7 @@
               "worksheet.client": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Client"
                   }
                 },
@@ -3469,7 +3469,7 @@
               "worksheet.client_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Client (ID)"
                   }
                 },
@@ -3541,7 +3541,7 @@
               "worksheet.collaborateur": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Collaborateur"
                   }
                 },
@@ -3560,7 +3560,7 @@
               "worksheet.collaborateur_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Collaborateur ID"
                   }
                 },
@@ -3616,7 +3616,7 @@
               "worksheet.coût": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Coût"
                   }
                 },
@@ -3632,7 +3632,7 @@
               "worksheet.created_time": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Created Time"
                   }
                 },
@@ -3699,7 +3699,7 @@
               "worksheet.created_time.variation.date_hierarchy": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "VariationSet": "Variation",
                     "VariationSource": "Created Time"
@@ -3736,7 +3736,7 @@
               "worksheet.created_time.variation.date_hierarchy.day": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Day",
                     "VariationSet": "Variation",
@@ -3867,7 +3867,7 @@
               "worksheet.created_time.variation.date_hierarchy.month": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Month",
                     "VariationSet": "Variation",
@@ -3998,7 +3998,7 @@
               "worksheet.created_time.variation.date_hierarchy.quarter": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Quarter",
                     "VariationSet": "Variation",
@@ -4129,7 +4129,7 @@
               "worksheet.created_time.variation.date_hierarchy.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Year",
                     "VariationSet": "Variation",
@@ -4260,7 +4260,7 @@
               "worksheet.date": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Date"
                   }
                 },
@@ -4297,7 +4297,7 @@
               "worksheet.date.variation.date_hierarchy": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "VariationSet": "Variation",
                     "VariationSource": "Date"
@@ -4317,7 +4317,7 @@
               "worksheet.date.variation.date_hierarchy.day": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Day",
                     "VariationSet": "Variation",
@@ -4362,7 +4362,7 @@
               "worksheet.date.variation.date_hierarchy.month": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Month",
                     "VariationSet": "Variation",
@@ -4427,7 +4427,7 @@
               "worksheet.date.variation.date_hierarchy.quarter": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Quarter",
                     "VariationSet": "Variation",
@@ -4492,7 +4492,7 @@
               "worksheet.date.variation.date_hierarchy.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Year",
                     "VariationSet": "Variation",
@@ -4557,7 +4557,7 @@
               "worksheet.fraction": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Fractions"
                   }
                 },
@@ -4643,7 +4643,7 @@
               "worksheet.heure": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Heure"
                   }
                 },
@@ -4659,7 +4659,7 @@
               "worksheet.id_mission": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Id mission"
                   }
                 },
@@ -4778,7 +4778,7 @@
               "worksheet.last_updated_time": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Last Updated Time"
                   }
                 },
@@ -4895,7 +4895,7 @@
               "worksheet.last_updated_time.variation.date_hierarchy": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "VariationSet": "Variation",
                     "VariationSource": "Last Updated Time"
@@ -4920,7 +4920,7 @@
               "worksheet.last_updated_time.variation.date_hierarchy.day": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Day",
                     "VariationSet": "Variation",
@@ -5045,7 +5045,7 @@
               "worksheet.last_updated_time.variation.date_hierarchy.month": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Month",
                     "VariationSet": "Variation",
@@ -5170,7 +5170,7 @@
               "worksheet.last_updated_time.variation.date_hierarchy.quarter": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Quarter",
                     "VariationSet": "Variation",
@@ -5295,7 +5295,7 @@
               "worksheet.last_updated_time.variation.date_hierarchy.year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "Hierarchy": "Date Hierarchy",
                     "HierarchyLevel": "Year",
                     "VariationSet": "Variation",
@@ -5420,7 +5420,7 @@
               "worksheet.marge": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Marge"
                   }
                 },
@@ -5436,7 +5436,7 @@
               "worksheet.marge_": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Marge %"
                   }
                 },
@@ -5472,7 +5472,7 @@
               "worksheet.mission": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Mission"
                   }
                 },
@@ -5588,7 +5588,7 @@
               "worksheet.nom": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Nom"
                   }
                 },
@@ -5604,7 +5604,7 @@
               "worksheet.nombre_de_jour": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Nombre de jours"
                   }
                 },
@@ -5620,7 +5620,7 @@
               "worksheet.nombre_de_jours_MTD": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Nombre de jours to date"
                   }
                 },
@@ -5656,7 +5656,7 @@
               "worksheet.prénom": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Prénom"
                   }
                 },
@@ -5672,7 +5672,7 @@
               "worksheet.raf_": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "RAF %"
                   }
                 },
@@ -5708,7 +5708,7 @@
               "worksheet.référence_interne": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Référence interne"
                   }
                 },
@@ -5724,7 +5724,7 @@
               "worksheet.stafiz_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Stafiz ID"
                   }
                 },
@@ -5780,7 +5780,7 @@
               "worksheet.type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Type"
                   }
                 },
@@ -5896,7 +5896,7 @@
               "worksheet.tâche": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Tâche"
                   }
                 },
@@ -5912,7 +5912,7 @@
               "worksheet.tâche_ID": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Tâche ID"
                   }
                 },
@@ -5968,7 +5968,7 @@
               "worksheet.valeur": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Worksheet",
+                    "ConceptualEntity": "timesheet",
                     "ConceptualProperty": "Valeur"
                   }
                 },
@@ -6210,7 +6210,7 @@
               },
               "feuil_1_date_has_variation_date_hierarchy": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6243,7 +6243,7 @@
               },
               "feuil_1_date_variation_date_hierarchy_has_day": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6276,7 +6276,7 @@
               },
               "feuil_1_date_variation_date_hierarchy_has_month": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6309,7 +6309,7 @@
               },
               "feuil_1_date_variation_date_hierarchy_has_quarter": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6342,7 +6342,7 @@
               },
               "feuil_1_date_variation_date_hierarchy_has_year": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6375,7 +6375,7 @@
               },
               "feuil_1_has_client": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6408,7 +6408,7 @@
               },
               "feuil_1_has_client1": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6454,7 +6454,7 @@
               },
               "feuil_1_has_collaborateur": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6500,7 +6500,7 @@
               },
               "feuil_1_has_column_26": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6533,7 +6533,7 @@
               },
               "feuil_1_has_date": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6566,7 +6566,7 @@
               },
               "feuil_1_has_devise": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6599,7 +6599,7 @@
               },
               "feuil_1_has_devise_mission": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6632,7 +6632,7 @@
               },
               "feuil_1_has_engagement": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6665,7 +6665,7 @@
               },
               "feuil_1_has_frais_non_refacturable": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6698,7 +6698,7 @@
               },
               "feuil_1_has_history_id": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6731,7 +6731,7 @@
               },
               "feuil_1_has_history_line_id": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6764,7 +6764,7 @@
               },
               "feuil_1_has_jours___quantité": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6797,7 +6797,7 @@
               },
               "feuil_1_has_marge": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6830,7 +6830,7 @@
               },
               "feuil_1_has_marge_pdp_": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6863,7 +6863,7 @@
               },
               "feuil_1_has_mission": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6909,7 +6909,7 @@
               },
               "feuil_1_has_montant_de_vente": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -6969,7 +6969,7 @@
               },
               "feuil_1_has_numéro_de_Devi": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7002,7 +7002,7 @@
               },
               "feuil_1_has_objet": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7035,7 +7035,7 @@
               },
               "feuil_1_has_objet_type": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7068,7 +7068,7 @@
               },
               "feuil_1_has_production_valorisée": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7128,7 +7128,7 @@
               },
               "feuil_1_has_remise": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7161,7 +7161,7 @@
               },
               "feuil_1_has_taux": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7194,7 +7194,7 @@
               },
               "feuil_1_has_taux_de_réalisation": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7227,7 +7227,7 @@
               },
               "feuil_1_has_total": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7260,7 +7260,7 @@
               },
               "feuil_1_has_total_montant_des_ventes": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7293,7 +7293,7 @@
               },
               "feuil_1_has_type": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7326,7 +7326,7 @@
               },
               "feuil_1_has_type_de_taux": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7359,7 +7359,7 @@
               },
               "feuil_1_has_tâche": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7392,7 +7392,7 @@
               },
               "feuil_1_has_worksheet_RAF_to_date": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7425,7 +7425,7 @@
               },
               "feuil_1_has_worksheet_raf_": {
                 "Binding": {
-                  "ConceptualEntity": "Feuil1"
+                  "ConceptualEntity": "previsions"
                 },
                 "Phrasings": [
                   {
@@ -7995,7 +7995,7 @@
               },
               "worksheet_created_time_has_variation_date_hierarchy": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8028,7 +8028,7 @@
               },
               "worksheet_created_time_variation_date_hierarchy_has_day": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8061,7 +8061,7 @@
               },
               "worksheet_created_time_variation_date_hierarchy_has_month": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8094,7 +8094,7 @@
               },
               "worksheet_created_time_variation_date_hierarchy_has_quarter": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8127,7 +8127,7 @@
               },
               "worksheet_created_time_variation_date_hierarchy_has_year": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8160,7 +8160,7 @@
               },
               "worksheet_date_has_variation_date_hierarchy": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8193,7 +8193,7 @@
               },
               "worksheet_date_variation_date_hierarchy_has_day": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8226,7 +8226,7 @@
               },
               "worksheet_date_variation_date_hierarchy_has_month": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8259,7 +8259,7 @@
               },
               "worksheet_date_variation_date_hierarchy_has_quarter": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8292,7 +8292,7 @@
               },
               "worksheet_date_variation_date_hierarchy_has_year": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8325,7 +8325,7 @@
               },
               "worksheet_has_RAF_to_date": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8358,7 +8358,7 @@
               },
               "worksheet_has_assignment_reference_stafiz_code_of_automatic_assignment": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8391,7 +8391,7 @@
               },
               "worksheet_has_client": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8437,7 +8437,7 @@
               },
               "worksheet_has_client_ID": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8470,7 +8470,7 @@
               },
               "worksheet_has_collaborateur": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8516,7 +8516,7 @@
               },
               "worksheet_has_collaborateur_ID": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8549,7 +8549,7 @@
               },
               "worksheet_has_coût": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8609,7 +8609,7 @@
               },
               "worksheet_has_created_time": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8642,7 +8642,7 @@
               },
               "worksheet_has_date": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8675,7 +8675,7 @@
               },
               "worksheet_has_fraction": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8708,7 +8708,7 @@
               },
               "worksheet_has_heure": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8741,7 +8741,7 @@
               },
               "worksheet_has_last_updated_time": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8774,7 +8774,7 @@
               },
               "worksheet_has_marge": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8807,7 +8807,7 @@
               },
               "worksheet_has_marge_": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8840,7 +8840,7 @@
               },
               "worksheet_has_mission": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8873,7 +8873,7 @@
               },
               "worksheet_has_mission1": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8919,7 +8919,7 @@
               },
               "worksheet_has_nom": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8952,7 +8952,7 @@
               },
               "worksheet_has_nombre_de_jour": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -8985,7 +8985,7 @@
               },
               "worksheet_has_nombre_de_jours_MTD": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9018,7 +9018,7 @@
               },
               "worksheet_has_prénom": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9051,7 +9051,7 @@
               },
               "worksheet_has_raf_": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9084,7 +9084,7 @@
               },
               "worksheet_has_référence_interne": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9117,7 +9117,7 @@
               },
               "worksheet_has_stafiz_ID": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9150,7 +9150,7 @@
               },
               "worksheet_has_type": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9183,7 +9183,7 @@
               },
               "worksheet_has_tâche": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9216,7 +9216,7 @@
               },
               "worksheet_has_tâche_ID": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9249,7 +9249,7 @@
               },
               "worksheet_has_valeur": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9309,7 +9309,7 @@
               },
               "worksheet_is_created_on_created_time": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9351,7 +9351,7 @@
               },
               "worksheet_is_updated_on_last_updated_time": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9393,7 +9393,7 @@
               },
               "worksheet_last_updated_time_has_variation_date_hierarchy": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9426,7 +9426,7 @@
               },
               "worksheet_last_updated_time_variation_date_hierarchy_has_day": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9459,7 +9459,7 @@
               },
               "worksheet_last_updated_time_variation_date_hierarchy_has_month": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9492,7 +9492,7 @@
               },
               "worksheet_last_updated_time_variation_date_hierarchy_has_quarter": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9525,7 +9525,7 @@
               },
               "worksheet_last_updated_time_variation_date_hierarchy_has_year": {
                 "Binding": {
-                  "ConceptualEntity": "Worksheet"
+                  "ConceptualEntity": "timesheet"
                 },
                 "Phrasings": [
                   {
@@ -9572,7 +9572,7 @@
       {
         "name": "3b864af4-740f-43bf-96db-06d08cea6bd2",
         "fromColumn": "Date",
-        "fromTable": "Worksheet",
+        "fromTable": "timesheet",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_ea23c240-99a7-4ebf-8a98-97585263432a"
@@ -9580,7 +9580,7 @@
       {
         "name": "69754358-a008-4476-a9cf-816db551155e",
         "fromColumn": "Created Time",
-        "fromTable": "Worksheet",
+        "fromTable": "timesheet",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_84441b25-6ef5-4096-a1a6-db85f4361994"
@@ -9588,7 +9588,7 @@
       {
         "name": "f48cd2c7-888d-4c2e-a5f2-38bb11e2c5fb",
         "fromColumn": "Last Updated Time",
-        "fromTable": "Worksheet",
+        "fromTable": "timesheet",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_ee42edfd-719c-4c43-ab38-904649c7d6c6"
@@ -9596,68 +9596,53 @@
       {
         "name": "f40874df-ffeb-492a-8808-b8bb55df86f8",
         "fromColumn": "Date",
-        "fromTable": "Feuil1",
+        "fromTable": "previsions",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_c3a53611-2d2e-4908-b073-88a71e3cf86f"
       },
       {
-        "name": "a624bb1f-a6de-461d-affc-2881deaaf3ee",
-        "fromColumn": "Client ID",
-        "fromTable": "Feuil1",
-        "toColumn": "Client ID",
-        "toTable": "Client"
-      },
-      {
-        "name": "03ddc190-72d9-4392-8d68-f633d08a9071",
-        "fromColumn": "Client",
-        "fromTable": "Worksheet",
-        "toColumn": "Client ID",
-        "toTable": "Client"
-      },
-      {
         "name": "cee60b48-be91-4471-8dcb-0bf9376b4991",
         "fromColumn": "Mission",
-        "fromTable": "Feuil1",
-        "toColumn": "Mission",
+        "fromTable": "previsions",
+        "toColumn": "Mission ID",
         "toTable": "Mission"
-      },
-      {
-        "name": "48dac8ea-6cae-481a-b565-58402c7a0c59",
-        "crossFilteringBehavior": "bothDirections",
-        "fromCardinality": "one",
-        "fromColumn": "Client ID",
-        "fromTable": "Mission",
-        "isActive": false,
-        "toColumn": "Client ID",
-        "toTable": "Client"
       },
       {
         "name": "d38b8ac3-3e72-49c1-9af4-f04634b3b02c",
         "fromColumn": "Id mission",
-        "fromTable": "Worksheet",
-        "toColumn": "Mission",
+        "fromTable": "timesheet",
+        "toColumn": "Mission ID",
         "toTable": "Mission"
       },
       {
         "name": "e2529d67-9131-4f9f-8af9-9a6a5d8c8c27",
         "fromColumn": "Objet ID",
-        "fromTable": "Feuil1",
+        "fromTable": "previsions",
         "toColumn": "Objet ID",
         "toTable": "Collaborateur"
       },
       {
         "name": "b0b25ffb-111c-4dfb-a6f9-06399ad1f743",
         "fromColumn": "Collaborateur",
-        "fromTable": "Worksheet",
+        "fromTable": "timesheet",
         "toColumn": "Objet ID",
         "toTable": "Collaborateur"
+      },
+      {
+        "name": "a81c6585-5e66-47ef-813b-bc45d0ef0045",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Client ID",
+        "fromTable": "Mission",
+        "toColumn": "Client ID",
+        "toTable": "Client"
       }
     ],
     "sourceQueryCulture": "fr-FR",
     "tables": [
       {
-        "name": "Worksheet",
+        "name": "timesheet",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -9982,13 +9967,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "0.0",
             "lineageTag": "8a8dabe6-aa09-4cd7-8f7b-913bac0079cf",
             "sourceColumn": "Nombre de jours",
             "summarizeBy": "sum"
@@ -10005,20 +9987,20 @@
             "formatString": "0",
             "lineageTag": "14fa8b81-8f64-43fe-ac36-3400d150d21b",
             "sourceColumn": "Client",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "c74b7f56-ba12-45b3-b1bd-ec42096cfd30",
         "measures": [
           {
             "name": "Marge",
-            "expression": "SUM(Worksheet[Valeur])-SUM(Worksheet[Coût])",
+            "expression": "SUM(timesheet[Valeur])-SUM(timesheet[Coût])",
             "formatString": "0",
             "lineageTag": "c8e85f30-0789-4ad6-baa5-d5b6b4455c5b"
           },
           {
             "name": "Marge %",
-            "expression": "DIVIDE([Marge],SUM(Worksheet[Valeur]))",
+            "expression": "DIVIDE([Marge],SUM(timesheet[Valeur]))",
             "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
             "lineageTag": "5fb6b68f-6db4-4fde-95ea-847c27ca48dc"
           },
@@ -10033,37 +10015,32 @@
             "expression": [
               "",
               "CALCULATE(",
-              "    SUM(Worksheet[Nombre de jours]),",
-              "    Worksheet[Date]<= MAX(Worksheet[Date])",
+              "    SUM(timesheet[Nombre de jours]),",
+              "    timesheet[Date]<= MAX(timesheet[Date])",
               ") "
             ],
             "lineageTag": "9627746d-ea8d-499c-b0f6-783df2406b4f"
           },
           {
             "name": "RAF to date",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "expression": [
               "CALCULATE(",
-              "    SUM(Feuil1[Jours / Quantité]),",
+              "    SUM(previsions[Jours / Quantité]),",
               "    FILTER(",
-              "        ALLSELECTED(Feuil1),",
-              "        Feuil1[Date]<= MAX(Worksheet[Date])",
+              "        ALLSELECTED(previsions),",
+              "        previsions[Date]<= MAX(timesheet[Date])",
               "    )",
               ")",
               "-",
               "CALCULATE(",
-              "    SUM(Worksheet[Nombre de jours]),",
+              "    SUM(timesheet[Nombre de jours]),",
               "    FILTER(",
-              "        ALL(Worksheet),",
-              "        Worksheet[Date]<= MAX(Worksheet[Date])",
+              "        ALL(timesheet),",
+              "        timesheet[Date]<= MAX(timesheet[Date])",
               "    )",
               ")"
             ],
+            "formatString": "0.0",
             "lineageTag": "dc539fcf-54ae-4c3c-a0af-dfc23a07acb4"
           },
           {
@@ -10075,7 +10052,7 @@
         ],
         "partitions": [
           {
-            "name": "Worksheet",
+            "name": "timesheet",
             "mode": "import",
             "source": {
               "expression": [
@@ -10493,7 +10470,7 @@
             "name": "LocalDateTable_ea23c240-99a7-4ebf-8a98-97585263432a",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Worksheet'[Date])), 1, 1), Date(Year(MAX('Worksheet'[Date])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('timesheet'[Date])), 1, 1), Date(Year(MAX('timesheet'[Date])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -10694,7 +10671,7 @@
             "name": "LocalDateTable_84441b25-6ef5-4096-a1a6-db85f4361994",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Worksheet'[Created Time])), 1, 1), Date(Year(MAX('Worksheet'[Created Time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('timesheet'[Created Time])), 1, 1), Date(Year(MAX('timesheet'[Created Time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -10895,7 +10872,7 @@
             "name": "LocalDateTable_ee42edfd-719c-4c43-ab38-904649c7d6c6",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Worksheet'[Last Updated Time])), 1, 1), Date(Year(MAX('Worksheet'[Last Updated Time])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('timesheet'[Last Updated Time])), 1, 1), Date(Year(MAX('timesheet'[Last Updated Time])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -10903,7 +10880,7 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "Feuil1",
+        "name": "previsions",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -10955,7 +10932,7 @@
             "formatString": "0",
             "lineageTag": "93f50cc0-6f11-44a3-b9d5-35def34a5f8b",
             "sourceColumn": "Client ID",
-            "summarizeBy": "none"
+            "summarizeBy": "count"
           },
           {
             "name": "Client",
@@ -11206,13 +11183,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "0.0",
             "lineageTag": "2f374da1-cf46-488c-8a58-2ea39c183b05",
             "sourceColumn": "Jours / Quantité",
             "summarizeBy": "sum"
@@ -11308,7 +11282,7 @@
                 "value": "{\"currencyCulture\":\"fr-FR\"}"
               }
             ],
-            "expression": "SUMx(Feuil1, DIVIDE(Feuil1[Marge],Feuil1[Montant de vente]))",
+            "expression": "SUMx(previsions, DIVIDE(previsions[Marge],previsions[Montant de vente]))",
             "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
             "lineageTag": "ea5fa122-a3e0-4d51-b900-206570b8faaf"
           },
@@ -11322,9 +11296,9 @@
             ],
             "expression": [
               "",
-              "var unique_client = DISTINCT(ALL(Feuil1[Engagement],Feuil1[Montant de vente]))",
+              "var unique_client = DISTINCT(ALL(previsions[Engagement],previsions[Montant de vente]))",
               "return",
-              "SUMX(unique_client,Feuil1[Montant de vente])"
+              "SUMX(unique_client,previsions[Montant de vente])"
             ],
             "formatString": "#,0.###############\\ \"€\";-#,0.###############\\ \"€\";#,0.###############\\ \"€\"",
             "lineageTag": "201f9be5-fa9d-4995-8ae6-fb2795e4ccb9"
@@ -11332,7 +11306,7 @@
         ],
         "partitions": [
           {
-            "name": "Feuil1",
+            "name": "previsions",
             "mode": "import",
             "source": {
               "expression": [
@@ -11548,7 +11522,7 @@
             "name": "LocalDateTable_c3a53611-2d2e-4908-b073-88a71e3cf86f",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('Feuil1'[Date])), 1, 1), Date(Year(MAX('Feuil1'[Date])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('previsions'[Date])), 1, 1), Date(Year(MAX('previsions'[Date])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -11604,7 +11578,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Feuil1,",
+                "    Source = previsions,",
                 "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Client ID\", \"Client\"}),",
                 "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"Client ID\"})",
                 "in",
@@ -11699,7 +11673,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Feuil1,",
+                "    Source = previsions,",
                 "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Taux\", \"Objet ID\", \"Objet\", \"Objet (type)\"}),",
                 "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Removed Other Columns\",{\"Objet ID\", \"Objet\", \"Objet (type)\", \"Taux\"}),",
                 "    #\"Removed Duplicates\" = Table.Distinct(#\"Reordered Columns\", {\"Objet ID\"}),",
@@ -11726,7 +11700,7 @@
         ],
         "columns": [
           {
-            "name": "Mission",
+            "name": "Mission ID",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -11736,7 +11710,7 @@
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "807cf9d3-8348-43c5-baa9-9cc3818ec4c0",
-            "sourceColumn": "Mission",
+            "sourceColumn": "Mission ID",
             "summarizeBy": "none"
           },
           {
@@ -11751,10 +11725,10 @@
             "formatString": "0",
             "lineageTag": "a0a8d7f8-8e90-4b4f-8256-88072363153b",
             "sourceColumn": "Client ID",
-            "summarizeBy": "count"
+            "summarizeBy": "none"
           },
           {
-            "name": "Engagement",
+            "name": "Mission",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -11763,7 +11737,7 @@
             ],
             "dataType": "string",
             "lineageTag": "d1a1330f-6bd7-4906-8ebc-f94b71224c40",
-            "sourceColumn": "Engagement",
+            "sourceColumn": "Mission",
             "summarizeBy": "none"
           },
           {
@@ -11905,7 +11879,7 @@
         "measures": [
           {
             "name": "Marge mission %",
-            "expression": "DIVIDE(SUM(Mission[Marge]),SUM(Mission[Montant de vente]))",
+            "expression": "DIVIDE(MAx(Mission[Marge]),MAX(Mission[Montant de vente]))",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "3652cec6-6cef-4888-a8a3-a7244a303b56"
           },
@@ -11913,14 +11887,14 @@
             "name": "Nombre de jours travaillés",
             "expression": [
               "",
-              "DISTINCTCOUNT(Worksheet[Date])"
+              "DISTINCTCOUNT(timesheet[Date])"
             ],
             "formatString": "0",
             "lineageTag": "61e618f0-acf3-4e21-b2f1-b1154fe9b2d1"
           },
           {
             "name": "Taux de staffing Indiv",
-            "expression": "AVERAGE(Worksheet[Nombre de jours])",
+            "expression": "AVERAGE(timesheet[Nombre de jours])",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "e378be38-e2f6-4941-aa57-57c2325abb17"
           }
@@ -11932,11 +11906,12 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Feuil1,",
+                "    Source = previsions,",
                 "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Mission\", \"Client ID\", \"Engagement\", \"Montant de vente\", \"Devise mission\", \"Production valorisée\", \"Taux de réalisation\", \"Type\", \"Frais non refacturables\", \"Remise\", \"Numéro de devis\", \"Marge\"}),",
-                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"Mission\"})",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"Mission\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Duplicates\",{{\"Mission\", \"Mission ID\"}, {\"Engagement\", \"Mission\"}})",
                 "in",
-                "    #\"Removed Duplicates\""
+                "    #\"Renamed Columns\""
               ],
               "type": "m"
             }
