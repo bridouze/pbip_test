@@ -4,7 +4,7 @@ parameters:
     type: string
     default: '[Workspace Name]'
   # Azure AD user object id, that will be added as admin in case the workspace does not exist. Learn more: https://learn.microsoft.com/en-us/partner-center/account-settings/find-ids-and-domain-names
-  - name: jbouvet
+  - name: adminPrincipalId
     displayName: Admin Principal Id to be added as workspace admin?
     type: string
     default: '[Azure AD object Id]'
@@ -68,8 +68,8 @@ stages:
                 $workspaceName = "${{ parameters.workspaceName }}"
                 $adminPrincipalId = "${{ parameters.adminPrincipalId }}"
 
-                $pbipSemanticModelPath = "$path\[Semantic Model folder name].SemanticModel"
-                $pbipReportPath = "$path\[Report folder name].Report"
+                $pbipSemanticModelPath = "$path\Adventure Works.SemanticModel"
+                $pbipReportPath = "$path\Adventure Works.Report"
 
                 $workingFolder = "$path\.ado"
 
