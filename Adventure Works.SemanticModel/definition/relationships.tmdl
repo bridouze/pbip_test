@@ -1,0 +1,37 @@
+relationship abc7770a-7978-4563-82e4-e8b48591c561
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Date
+	toColumn: LocalDateTable_9f834d9f-4fcc-402e-b28a-a95232ef77fb.Date
+
+relationship dd4b4a1f-19eb-48eb-b874-f6b7e24fc264
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.Month
+	toColumn: LocalDateTable_f30eca68-5054-47f7-9c67-4f078c781b2b.Date
+
+relationship 2b69f6c7-4ded-464b-968a-ccdd2abadd61
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Date.'Full Date'
+	toColumn: LocalDateTable_cc59cc54-433e-4044-b788-5bc4a0a5968c.Date
+
+relationship AutoDetected_a0df416c-f6bf-4a18-b8fa-d2095af58735
+	fromColumn: Sales.CustomerKey
+	toColumn: Customer.CustomerKey
+
+relationship AutoDetected_0be14c50-9c86-4e80-9d0a-14cf864c3c4a
+	fromColumn: Sales.ProductKey
+	toColumn: Product.ProductKey
+
+relationship AutoDetected_0b379a94-8544-4336-83c1-d2c2204e75f9
+	fromColumn: Sales.ResellerKey
+	toColumn: Reseller.ResellerKey
+
+relationship AutoDetected_26a930ba-b7d9-443e-9cc4-d3bb1d03d63f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SalesOrder.SalesOrderLineKey
+	toColumn: Sales.SalesOrderLineKey
+
+relationship AutoDetected_1ed5a0d3-49dd-4c7d-8ab6-369ee36232a8
+	fromColumn: Sales.SalesTerritoryKey
+	toColumn: SalesTerritory.SalesTerritoryKey
+
