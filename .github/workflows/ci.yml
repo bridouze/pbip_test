@@ -1,12 +1,12 @@
 trigger: manual
+      
+pool:
+  vmimage: 'windows-latest'
 
 on:
   push:
     branches:
       - master
-      
-pool:
-  vmimage: 'windows-latest'
 
 stages:
  - stage: Build
