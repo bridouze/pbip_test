@@ -1,5 +1,10 @@
 trigger: manual
 
+on:
+  push:
+    branches:
+      - master
+      
 pool:
   vmimage: 'windows-latest'
 
