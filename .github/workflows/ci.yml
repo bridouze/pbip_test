@@ -3,15 +3,17 @@ trigger: manual
 pool:
   vmimage: 'windows-latest'
 
+stages:
+ - stage: Build
+ 
+
 on:
   push:
     branches:
       - master
 
-stages:
- - stage: Build
-  - jobs:
 
+jobs:
     - job: Build_Datasets
       steps:
         - checkout: self
