@@ -1,109 +1,124 @@
-parameters:
-  - name: workspaceName
-    displayName: Workspace name to deploy?
-    type: string
-    default: '[Workspace Name]'
-  # Azure AD user object id, that will be added as admin in case the workspace does not exist. Learn more: https://learn.microsoft.com/en-us/partner-center/account-settings/find-ids-and-domain-names
-  - name: adminPrincipalId
-    displayName: Admin Principal Id to be added as workspace admin?
-    type: string
-    default: '[Azure AD object Id]'
-
 trigger: none
 
 pool:
   vmimage: 'windows-latest'
 
-variables:
-  # Variable group with AppId, AppSecret and TenantId configuration. Learn more: https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml
-  - group: fabricAPISecrets
-
 stages:
- - stage: Deploy
+ - stage: Build
    jobs:
 
-    - job: Deploy
+    - job: Build_Datasets
       steps:
         - checkout: self
           path: 'self'
         - task: PowerShell@2
-          displayName: 'Download dependencies'
+          displayName: 'Download Tabular Editor and Default Rules'
           inputs:
-            pwsh: true
             targetType: inline
             script: |     
-                $path = "$(Build.SourcesDirectory)"
+              $path = "$(Build.SourcesDirectory)"                       
+              $tempPath = "$path\_temp"
+              $toolPath = "$path\_tools\TE"
+              New-Item -ItemType Directory -Path $tempPath -ErrorAction SilentlyContinue | Out-Null              
+              
+              Write-Host "##[debug]Downloading Tabular Editor binaries"
+              $downloadUrl = "https://github.com/TabularEditor/TabularEditor/releases/latest/download/TabularEditor.Portable.zip"
+              $zipFile = "$tempPath\TabularEditor.zip"
+              Invoke-WebRequest -Uri $downloadUrl -OutFile $zipFile
+              Expand-Archive -Path $zipFile -DestinationPath $toolPath -Force            
 
-                $workingFolder = "$path\.ado"
-
-                New-Item -ItemType Directory -Path "$workingFolder\modules" -ErrorAction SilentlyContinue | Out-Null
-
-                Write-Host "##[debug]Downloading FabricPS-PBIP module"
-
-                @(
-                    "https://raw.githubusercontent.com/microsoft/Analysis-Services/master/pbidevmode/fabricps-pbip/FabricPS-PBIP.psm1",
-                    "https://raw.githubusercontent.com/microsoft/Analysis-Services/master/pbidevmode/fabricps-pbip/FabricPS-PBIP.psd1") |% {
-                        
-                        Invoke-WebRequest -Uri $_ -OutFile "$workingFolder\modules\$(Split-Path $_ -Leaf)"
-
-                    }
-
-                Write-Host "##[debug]Installing Az.Accounts"
-
-                if(-not (Get-Module Az.Accounts -ListAvailable)){
-                    Install-Module Az.Accounts -Scope CurrentUser -Force
-                }
+              Write-Host "##[debug]Downloading Dataset default rules"
+              $downloadUrl = "https://raw.githubusercontent.com/microsoft/Analysis-Services/master/BestPracticeRules/BPARules.json"
+              Invoke-WebRequest -Uri $downloadUrl -OutFile "$tempPath\Rules-Dataset.json"     
         - task: PowerShell@2
-          displayName: 'Deploy PBIP'
-          # TODO: Must change the $pbipSemanticModelPath and $pbipReportPath to the path of the PBIP semantic model and report.
+          displayName: 'Run Dataset Rules'
           inputs:
-            pwsh: true
             targetType: inline
             script: |
-              
-                $path = "$(Build.SourcesDirectory)"
-                $appId = "$(appId)"
-                $appSecret = "$(appSecret)"
-                $tenantId = "$(tenantId)"                                        
-                $workspaceName = "${{ parameters.workspaceName }}"
-                $adminPrincipalId = "${{ parameters.adminPrincipalId }}"
+              $path = "$(Build.SourcesDirectory)"
+              $tempPath = "$path\_temp"
+              $toolPath = "$path\_Tools\TE\TabularEditor.exe"
+              $rulesPath = "$path\Rules-Dataset.json"
 
-                $pbipSemanticModelPath = "$path\Adventure Works.SemanticModel"
-                $pbipReportPath = "$path\Adventure Works.Report"
+              if (!(Test-Path $rulesPath))
+              {
+                  Write-Host "Running downloaded rules"
+                  $rulesPath = "$tempPath\Rules-Dataset.json"
+              }
 
-                $workingFolder = "$path\.ado"
+              $itemsFolders = Get-ChildItem  -Path $path -recurse -include ("*.pbidataset", "*.pbism")
 
-                Import-Module "$workingFolder\modules\FabricPS-PBIP" -Force
+              foreach($itemFolder in $itemsFolders)
+              {	
+                  $itemPath = "$($itemFolder.Directory.FullName)\definition"
 
-                Write-Host "##[debug]Authentication with SPN"
+                  if (!(Test-Path $itemPath))
+                  {
+                      $itemPath = "$($itemFolder.Directory.FullName)\model.bim"
 
-                Set-FabricAuthToken -servicePrincipalId $appId -servicePrincipalSecret $appSecret -tenantId $tenantId -reset       
+                      if (!(Test-Path $itemPath))
+                      {
+                          throw "Cannot find semantic model definition."
+                      }
 
-                $workspacePermissions = @{
-                    "principal" = @{
-                        "id" = "$adminPrincipalId"
-                        "type" = "user"
-                    }
-                    "role"= "Admin"
-                }
+                  }
 
-                Write-Host "##[debug]Authentication with SPN"
+                  Write-Host "##[group]Running rules for: '$itemPath'"
 
-                Set-FabricAuthToken -servicePrincipalId $appId -servicePrincipalSecret $appSecret -tenantId $tenantId -reset                        
+                  Start-Process -FilePath "$toolPath" -ArgumentList """$itemPath"" -A ""$rulesPath"" -V" -NoNewWindow -Wait
 
-                Write-Host "##[debug]Ensure Fabric Workspace & permissions"
+                  Write-Host "##[endgroup]"
+              }
 
-                $workspaceId = New-FabricWorkspace  -name $workspaceName -skipErrorIfExists
+    - job: Build_Reports
+      steps:
+        - checkout: self
+          path: 'self'
+        - task: PowerShell@2
+          displayName: 'Download PBIXInspector'
+          inputs:
+            targetType: inline
+            script: |
+              $path = "$(Build.SourcesDirectory)"
+              $tempPath = "$path\_temp"
+              $toolPath = "$path\_Tools\PBIInspector"
+              New-Item -ItemType Directory -Path $tempPath -ErrorAction SilentlyContinue | Out-Null
 
-                Set-FabricWorkspacePermissions $workspaceId $workspacePermissions
+              Write-Host "##[debug]Downloading PBI Inspector"
+              $downloadUrl = "https://github.com/NatVanG/PBI-Inspector/releases/latest/download/win-x64-CLI.zip" 
+              $zipFile = "$tempPath\PBIXInspector.zip"
+              Invoke-WebRequest -Uri $downloadUrl -OutFile $zipFile
+              Expand-Archive -Path $zipFile -DestinationPath $toolPath -Force                            
 
-                Write-Host "##[debug]Publish Semantic Model"
+              Write-Host "##[debug]Downloading Report default rules"
+              $downloadUrl = "https://raw.githubusercontent.com/NatVanG/PBI-Inspector/main/Rules/Base-rules.json"
+              Invoke-WebRequest -Uri $downloadUrl -OutFile "$tempPath\Rules-Report.json"     
 
-                $semanticModelImport = Import-FabricItem -workspaceId $workspaceId -path $pbipSemanticModelPath
+        - task: PowerShell@2
+          displayName: 'Run Report Rules'
+          inputs:
+            targetType: inline
+            script: |
+                  $path = "$(Build.SourcesDirectory)"
+                  $tempPath = "$path\_temp"
+                  $toolPath =  "$path\_Tools\PBIInspector\win-x64\CLI\PBIXInspectorCLI.exe"
+                  $rulesPath = "$path\Rules-Report.json"
 
-                Write-Host "##[debug]Publish Report"
+                  if (!(Test-Path $rulesPath))
+                  {
+                      Write-Host "Running default downloaded rules"
+                      $rulesPath = "$tempPath\Rules-Report.json"
+                  }
 
-                # Import the report and ensure its binded to the previous imported report
+                  $itemsFolders = Get-ChildItem  -Path $path -recurse -include *.pbir
 
-                $reportImport = Import-FabricItem -workspaceId $workspaceId -path $pbipReportPath -itemProperties @{"semanticModelId"=$semanticModelImport.Id}
+                  foreach($itemFolder in $itemsFolders)
+                  {	
+                      $itemPath = $itemFolder.Directory.FullName
+                      
+                      Write-Host "##[group]Running rules for: '$itemPath'"
 
+                      Start-Process -FilePath "$toolPath" -ArgumentList "-pbipreport ""$itemPath"" -rules ""$rulesPath"" -formats ""ADO""" -NoNewWindow -Wait
+                      
+                      Write-Host "##[endgroup]"
+                  }
