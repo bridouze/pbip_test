@@ -10,7 +10,7 @@ on:
 
 stages:
  - stage: Build
-   jobs:
+  - jobs:
 
     - job: Build_Datasets
       steps:
